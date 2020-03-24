@@ -1,0 +1,29 @@
+{
+  "name": "spc-client",
+  "version": "1.0.0",
+  "description": "SPC CLIE Client",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BohdanPetryshyn/spc-client.git"
+  },
+  "keywords": [
+    "node",
+    "cli",
+    "chat",
+    "socket.io"
+  ],
+  "author": "BohdanPetryshyn",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BohdanPetryshyn/spc-client/issues"
+  },
+  "homepage": "https://github.com/BohdanPetryshyn/spc-client#readme",
+  "dependencies": {
+    "minimist": "^1.2.5",
+    "socket.io-client": "^2.3.0"
+  }
+}
