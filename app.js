@@ -5,13 +5,13 @@ const USERNAME = args['user'];
 const socket = require('socket.io-client')(SERVER_HOST);
 
 const buildMessage = require('./utils/buildMessage')(USERNAME);
-const startRepl = require('./utils/startRepl');
 const printMessage = require('./utils/printMessage');
+const startReadline = require('./utils/startReadline');
 
 socket.on('connect', () => {
   console.log(`Connected to server at ${SERVER_HOST}`);
 
-  startRepl(socket, buildMessage);
+  startReadline(socket, buildMessage);
 });
 
 socket.on('message', printMessage);
