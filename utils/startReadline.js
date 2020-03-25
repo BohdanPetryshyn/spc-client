@@ -6,7 +6,7 @@ module.exports = (socket, buildMessage) => {
     output: process.stdout,
   });
 
-  rl.on('line', (input) => {
+  rl.on('line', input => {
     const message = buildMessage(input);
     socket.send(message);
   });

@@ -1,1 +1,1 @@
-module.exports = (username) => (text) => ({ username, text });
+module.exports = username => text => ({ username, text });
